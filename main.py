@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     ctx = zmq.Context()
     req = ctx.socket(zmq.REQ)
-    req.connect('tcp://0.0.0.0:50020')
+    req.connect('tcp://{}'.format(sys.argv[1]))
 
     def notify(notification):
             """Sends ``notification`` to Pupil Remote"""
