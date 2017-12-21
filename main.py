@@ -1,12 +1,7 @@
 import zmq, msgpack, time
-import time
-import json
 import sys
-import numpy as np
-import pickle
 import os
 import marker_display
-
 
 
 #convenience functions
